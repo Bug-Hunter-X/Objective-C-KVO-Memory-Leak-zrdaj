@@ -1,0 +1,1 @@
+In Objective-C, a subtle bug can arise from the interaction between KVO (Key-Value Observing) and memory management. If an observer is not removed when it's no longer needed (e.g., when a view controller is deallocated), it may retain the observed object, preventing it from being deallocated. This leads to a memory leak and potential crashes.
